@@ -436,9 +436,10 @@ export default function Home() {
             </p>
 
             <p>
-              从荔山到粤海，从铅字印刷到元宇宙实验室<span className={styles.censoredText}>从来没进去过</span>，这座被改革开放基因编码的传播学院始终在践行最硬核的
-              <span className={styles.hoverAnnotation} data-annotation="疑似拼好饭中毒的幻想"><strong>浪漫主义</strong></span>
-              ——用新闻人的笔尖丈量湾区脉动，用广告人的创意解构城市符号，用新媒体人的代码编织未来图景<span className={styles.censoredText}>好高级，但臣妾做不到呀</span>。如果非要问在这里读书是什么体验？大概就是在国家一流学校和还没评上双一流之间，痛并快乐着书写属于深大传院学子的故事。
+              从丽湖到粤海，从铅字印刷到元宇宙实验室<span className={styles.censoredText}>从来没见开放过</span>，这座被改革开放基因编码的传播学院始终在践行最硬核的
+              <span className={styles.hoverAnnotation} data-annotation="一个双非闹麻了"><strong>浪漫主义</strong></span>
+              ——用新闻人的笔尖丈量湾区脉动，用广告人的创意解构城市符号，用新媒体人的代码编织未来图景<span className={styles.censoredText}>学新闻学的</span>。
+              如果非要问在这里读书是什么体验？那便是在中国改革开放最前沿的热土上，痛并快乐着书写属于深大传院学子的故事。<span className={styles.censoredText}>那便是在分数线比肩211的同时，抬头一看发现腾讯只招985/211一样幽默</span>
             </p>
 
             <p>
