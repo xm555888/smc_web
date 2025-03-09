@@ -1,0 +1,492 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.titleDecoration {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.noticeContent {
+  flex: 1;
+  line-height: 1.6;
+}
+
+/* 师资力量概况 */
+.facultyOverview {
+  margin-bottom: 3rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  overflow: hidden;
+}
+
+.overviewContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overviewImage {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.overviewImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overviewText {
+  flex: 2;
+  padding: 2rem;
+}
+
+.overviewText h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.overviewText h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.overviewText p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.2);
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 师资分类导航 */
+.facultyNav {
+  margin-bottom: 2rem;
+}
+
+.facultyNav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.facultyNav li {
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.facultyNav li:hover {
+  color: var(--primary-color);
+}
+
+.facultyNav li.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.facultyNav li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+/* 教师列表 */
+.teachersList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.teacherCard {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.teacherCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 102, 153, 0.3);
+}
+
+.teacherPhoto {
+  width: 150px;
+  height: 150px;
+  margin: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  flex-shrink: 0;
+}
+
+.teacherPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacherInfo {
+  flex: 1;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.teacherName {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.teacherTitle {
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.teacherDetail {
+  margin-top: 1rem;
+}
+
+.teacherResearch {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.teacherBio {
+  color: #666;
+  line-height: 1.6;
+}
+
+.teacherRating {
+  margin-top: 0.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* 移除装饰 */
+.cuteDecoration {
+  display: none;
+}
+
+/* 教师详情弹窗 */
+.teacherDetailOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.teacherDetailContainer {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.closeButton:hover {
+  transform: scale(1.1);
+  background-color: #ff3377;
+}
+
+.teacherDetailContent {
+  padding: 2rem;
+}
+
+.teacherDetailHeader {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.teacherDetailPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.teacherDetailPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacherDetailInfo h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.teacherDetailTitle {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.teacherDetailResearch {
+  color: #555;
+}
+
+.teacherDetailBody {
+  color: #333;
+}
+
+.teacherDetailSection {
+  margin-bottom: 1.5rem;
+}
+
+.teacherDetailSection h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.teacherDetailSection h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.teacherDetailSection p {
+  line-height: 1.8;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .overviewContent {
+    flex-direction: column;
+  }
+  
+  .overviewImage {
+    max-width: 100%;
+  }
+  
+  .facultyNav ul {
+    flex-wrap: wrap;
+  }
+  
+  .facultyNav li {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .teacherCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .teacherPhoto {
+    margin: 2rem 2rem 0;
+  }
+  
+  .teacherInfo {
+    padding: 1rem 2rem 2rem;
+    text-align: center;
+  }
+  
+  .teacherDetailHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .teacherDetailPhoto {
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* 分页导航 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 0.5rem;
+}
+
+.pageButton {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.pageButton:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.pageButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+} 

@@ -1,0 +1,739 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Navbar.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__XlgWY {
+  background-color: rgba(255, 102, 153, 0.85);
+  box-shadow: 0 2px 10px rgba(255, 102, 153, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 80px;
+}
+
+.Navbar_container__x_wnu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Navbar_logo__ycYQk {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar_logoImage__BhoCm {
+  height: 50px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj:hover {
+  transform: scale(1.05);
+}
+
+.Navbar_navMenu__YKUkJ {
+  display: flex;
+  list-style: none;
+}
+
+.Navbar_navItem__zYHCj {
+  margin-left: 1.5rem;
+}
+
+.Navbar_navLink__NoUWm {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Navbar_navLink__NoUWm:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_ {
+  color: white;
+  font-weight: bold;
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.Navbar_menuIcon__j_5cw {
+  display: none;
+  cursor: pointer;
+}
+
+.Navbar_bar__pfguf {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Navbar_menuIcon__j_5cw {
+    display: block;
+  }
+
+  .Navbar_logoImage__BhoCm {
+    height: 40px;
+  }
+
+  .Navbar_logoText__4ifaj {
+    font-size: 1.2rem;
+  }
+
+  .Navbar_navMenu__YKUkJ {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(255, 102, 153, 0.1);
+    padding: 2rem 0;
+  }
+
+  .Navbar_navMenu__YKUkJ.Navbar_active__gl4X_ {
+    left: 0;
+  }
+
+  .Navbar_navItem__zYHCj {
+    margin: 1.5rem 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+    bottom: -2px;
+    width: 20px;
+  }
+} 
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Footer.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__0IXn3 {
+  background-color: #f8f9fa;
+  padding: 3rem 0 1rem;
+  border-top: 3px solid var(--primary-color);
+  margin-top: 3rem;
+}
+
+.Footer_container__6pNfo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Footer_footerContent__guRXR {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.Footer_footerSection__Zafk8 {
+  flex: 1 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.Footer_footerTitle__x4IC_ {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.Footer_footerTitle__x4IC_::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.Footer_footerText__pZkXo {
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.Footer_footerLinks__L3vZo {
+  list-style: none;
+}
+
+.Footer_footerLinks__L3vZo li {
+  margin-bottom: 0.5rem;
+}
+
+.Footer_footerLinks__L3vZo a {
+  color: #666;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.Footer_footerLinks__L3vZo a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+.Footer_footerBottom__jCLw1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Footer_footerContent__guRXR {
+    flex-direction: column;
+  }
+  
+  .Footer_footerSection__Zafk8 {
+    margin-bottom: 2rem;
+  }
+} 
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/faculty/faculty.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.faculty_main__hlz84 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty_container__w1k7F {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1 1;
+}
+
+.faculty_pageHeader__3Rbkc {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faculty_pageTitle__VRpTn {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.faculty_titleDecoration__eFiFL {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.faculty_moegirlNotice__3wGwm {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.faculty_noticeIcon__JC4wv {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.faculty_noticeContent__dADot {
+  flex: 1 1;
+  line-height: 1.6;
+}
+
+/* 师资力量概况 */
+.faculty_facultyOverview__FB93P {
+  margin-bottom: 3rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  overflow: hidden;
+}
+
+.faculty_overviewContent__ikFlZ {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.faculty_overviewImage__ro9Xp {
+  flex: 1 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.faculty_overviewImage__ro9Xp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty_overviewText__TndRN {
+  flex: 2 1;
+  padding: 2rem;
+}
+
+.faculty_overviewText__TndRN h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.faculty_overviewText__TndRN h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.faculty_overviewText__TndRN p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.faculty_statsContainer__z75fz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.faculty_statItem__1KpXn {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.faculty_statItem__1KpXn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.2);
+}
+
+.faculty_statNumber__ffK15 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.faculty_statLabel__WDdLo {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 师资分类导航 */
+.faculty_facultyNav__WsRaB {
+  margin-bottom: 2rem;
+}
+
+.faculty_facultyNav__WsRaB ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.faculty_facultyNav__WsRaB li {
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.faculty_facultyNav__WsRaB li:hover {
+  color: var(--primary-color);
+}
+
+.faculty_facultyNav__WsRaB li.faculty_active__MLl_I {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.faculty_facultyNav__WsRaB li.faculty_active__MLl_I::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+/* 教师列表 */
+.faculty_teachersList___Kc6x {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faculty_teacherCard__5ibS7 {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.faculty_teacherCard__5ibS7:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 102, 153, 0.3);
+}
+
+.faculty_teacherPhoto__eiYqk {
+  width: 150px;
+  height: 150px;
+  margin: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  flex-shrink: 0;
+}
+
+.faculty_teacherPhoto__eiYqk img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty_teacherInfo__zUWiH {
+  flex: 1 1;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.faculty_teacherName__7IaWB {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.faculty_teacherTitle__NstqM {
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.faculty_teacherDetail__m3HM3 {
+  margin-top: 1rem;
+}
+
+.faculty_teacherResearch__kTcXw {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.faculty_teacherBio__tJgtz {
+  color: #666;
+  line-height: 1.6;
+}
+
+.faculty_teacherRating__z4kHU {
+  margin-top: 0.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* 移除装饰 */
+.faculty_cuteDecoration__ePz4t {
+  display: none;
+}
+
+/* 教师详情弹窗 */
+.faculty_teacherDetailOverlay__O4F8C {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  animation: faculty_fadeIn__xRKuZ 0.3s ease;
+}
+
+@keyframes faculty_fadeIn__xRKuZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.faculty_teacherDetailContainer__LJake {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: faculty_slideUp__SDLAY 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes faculty_slideUp__SDLAY {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.faculty_closeButton__nnLVk {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.faculty_closeButton__nnLVk:hover {
+  transform: scale(1.1);
+  background-color: #ff3377;
+}
+
+.faculty_teacherDetailContent__IckPD {
+  padding: 2rem;
+}
+
+.faculty_teacherDetailHeader__4UsmS {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.faculty_teacherDetailPhoto__xUluV {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.faculty_teacherDetailPhoto__xUluV img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty_teacherDetailInfo__C_BF6 h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.faculty_teacherDetailTitle__qvWCl {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.faculty_teacherDetailResearch__6kHSg {
+  color: #555;
+}
+
+.faculty_teacherDetailBody__2egjf {
+  color: #333;
+}
+
+.faculty_teacherDetailSection__s4KND {
+  margin-bottom: 1.5rem;
+}
+
+.faculty_teacherDetailSection__s4KND h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.faculty_teacherDetailSection__s4KND h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.faculty_teacherDetailSection__s4KND p {
+  line-height: 1.8;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .faculty_container__w1k7F {
+    padding-top: 100px;
+  }
+  
+  .faculty_pageTitle__VRpTn {
+    font-size: 2rem;
+  }
+  
+  .faculty_overviewContent__ikFlZ {
+    flex-direction: column;
+  }
+  
+  .faculty_overviewImage__ro9Xp {
+    max-width: 100%;
+  }
+  
+  .faculty_facultyNav__WsRaB ul {
+    flex-wrap: wrap;
+  }
+  
+  .faculty_facultyNav__WsRaB li {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .faculty_teacherCard__5ibS7 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .faculty_teacherPhoto__eiYqk {
+    margin: 2rem 2rem 0;
+  }
+  
+  .faculty_teacherInfo__zUWiH {
+    padding: 1rem 2rem 2rem;
+    text-align: center;
+  }
+  
+  .faculty_teacherDetailHeader__4UsmS {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .faculty_teacherDetailPhoto__xUluV {
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* 分页导航 */
+.faculty_pagination__uxwLJ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 0.5rem;
+}
+
+.faculty_pageButton__vSaYk {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.faculty_pageButton__vSaYk:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.faculty_pageButton__vSaYk:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.faculty_activePage__8EMvg {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+} 

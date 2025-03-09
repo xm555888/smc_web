@@ -1,0 +1,532 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.titleDecoration {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.noticeContent {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* 瓶子君152风格的名言 */
+.quoteContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.quote {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.quoteSymbol {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  position: absolute;
+}
+
+.quoteSymbol:first-child {
+  top: -1rem;
+  left: 0;
+}
+
+.quoteSymbol:last-child {
+  bottom: -1.5rem;
+  right: 0;
+}
+
+.quoteText {
+  background: linear-gradient(to right, #ff6699, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+}
+
+.quoteAuthor {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* 瓶子君152风格的警告框 */
+.warningContainer {
+  display: flex;
+  background-color: #fef6e7;
+  border: 1px solid #ffd77a;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.warningIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.warningText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* 标签页部分 */
+.tabsContainer {
+  margin-bottom: 3rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabButton {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover, .tabButton.active {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.tabContent {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(255, 102, 153, 0.2);
+}
+
+/* 章节标题 */
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* 学生活动部分 */
+.activitiesContent {
+  text-align: center;
+}
+
+.activitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.activityCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.activityCard:hover {
+  transform: translateY(-5px);
+}
+
+.activityHeader {
+  position: relative;
+  padding-right: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activityTitle {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.activityDate {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.expandIcon {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.activityContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  text-align: left;
+}
+
+.activityCard.expanded .activityContent {
+  max-height: 1000px;
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px dashed #ddd;
+}
+
+.activityDescription {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.activityDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activityImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.activityImageContainer {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.activityImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.activityImageContainer:hover .activityImage {
+  transform: scale(1.1);
+}
+
+.activityHighlights {
+  text-align: left;
+}
+
+.activityHighlights h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.activityHighlights ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.activityHighlights li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+  color: #555;
+}
+
+.activityHighlights li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* 学生组织部分 */
+.organizationsContent {
+  text-align: center;
+}
+
+.organizationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.organizationCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.organizationCard:hover {
+  transform: translateY(-5px);
+}
+
+.organizationHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.organizationLogo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  border: 2px solid var(--primary-color);
+}
+
+.organizationLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.organizationName {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.organizationDescription {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.organizationDepartments h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.departmentTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.departmentTag {
+  background-color: rgba(255, 102, 153, 0.1);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* 就业指导部分 */
+.careerContent {
+  text-align: center;
+}
+
+.careerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.careerCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.careerCard:hover {
+  transform: translateY(-5px);
+}
+
+.careerIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.careerTitle {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.careerContent {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.careerContact {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(255, 102, 153, 0.05);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.careerContact h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.careerContact p {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* 移除装饰 */
+.cuteDecoration {
+  display: none;
+}
+
+/* 巡礼记录部分 */
+.visitSection {
+  margin: 4rem 0;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.visitRecord {
+  margin-top: 1.5rem;
+}
+
+.visitList {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.visitList li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.visitList li::before {
+  content: '✓';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .tabButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .organizationsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .careerGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .activityImages {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quoteText {
+    font-size: 1.1rem;
+  }
+} 

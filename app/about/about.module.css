@@ -1,0 +1,301 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.titleDecoration {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 学院简介部分 */
+.aboutSection {
+  margin-bottom: 4rem;
+}
+
+.aboutCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.aboutText {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* 愿景部分 */
+.visionSection {
+  margin-bottom: 4rem;
+}
+
+.visionCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+}
+
+.visionItem {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.visionItem h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.visionItem p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* 发展历程部分 */
+.historySection {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+  z-index: 0;
+}
+
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.timelineItem:nth-child(odd) {
+  left: 0;
+}
+
+.timelineItem:nth-child(even) {
+  left: 50%;
+}
+
+.timelineDate {
+  position: absolute;
+  width: 120px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 20px;
+  top: 15px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.timelineItem:nth-child(odd) .timelineDate {
+  right: -60px;
+}
+
+.timelineItem:nth-child(even) .timelineDate {
+  left: -60px;
+}
+
+.timelineContent {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  z-index: 1;
+}
+
+.timelineContent::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 3px solid var(--primary-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timelineItem:nth-child(odd) .timelineContent::after {
+  right: -13px;
+}
+
+.timelineItem:nth-child(even) .timelineContent::after {
+  left: -13px;
+}
+
+.timelineContent h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent p {
+  color: #555;
+}
+
+/* 联系我们部分 */
+.contactSection {
+  margin-bottom: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contactItem {
+  flex: 1;
+  min-width: 200px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.3);
+}
+
+.contactItem h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.contactItem p {
+  color: #555;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .timelineItem:nth-child(even) {
+    left: 0;
+  }
+  
+  .timelineDate {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+  
+  .timelineItem:nth-child(odd) .timelineDate,
+  .timelineItem:nth-child(even) .timelineDate {
+    left: -30px;
+    top: 10px;
+  }
+  
+  .timelineItem:nth-child(odd) .timelineContent::after,
+  .timelineItem:nth-child(even) .timelineContent::after {
+    left: -13px;
+  }
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.noticeContent {
+  flex: 1;
+  line-height: 1.6;
+} 

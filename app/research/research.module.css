@@ -1,0 +1,511 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.titleDecoration {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.noticeContent {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* 瓶子君152风格的名言 */
+.quoteContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.quote {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.quoteSymbol {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  position: absolute;
+}
+
+.quoteSymbol:first-child {
+  top: -1rem;
+  left: 0;
+}
+
+.quoteSymbol:last-child {
+  bottom: -1.5rem;
+  right: 0;
+}
+
+.quoteText {
+  background: linear-gradient(to right, #ff6699, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+}
+
+.quoteAuthor {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* 瓶子君152风格的警告框 */
+.warningContainer {
+  display: flex;
+  background-color: #fef6e7;
+  border: 1px solid #ffd77a;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.warningIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.warningText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* 标签页部分 */
+.tabsContainer {
+  margin-bottom: 3rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabButton {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover, .tabButton.active {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.tabContent {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(255, 102, 153, 0.2);
+}
+
+/* 章节标题 */
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* 研究机构部分 */
+.institutesContent {
+  text-align: center;
+}
+
+.institutesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.instituteCard {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.instituteCard:hover {
+  transform: translateY(-10px);
+}
+
+.instituteImageContainer {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.instituteImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.instituteCard:hover .instituteImage {
+  transform: scale(1.1);
+}
+
+.instituteOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(255, 102, 153, 0.8));
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instituteName {
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.instituteInfo {
+  padding: 1.5rem;
+}
+
+.instituteDescription {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.instituteDirector {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 移除装饰 */
+.cuteDecoration {
+  display: none;
+}
+
+/* 研究项目部分 */
+.projectsContent {
+  text-align: center;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.projectCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+.projectHeader {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.projectTitle {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.projectMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.projectCategory {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.projectYear {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.projectLeader {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.expandIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.projectDetails {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  text-align: left;
+}
+
+.projectCard.expanded .projectDetails {
+  max-height: 500px;
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px dashed #ddd;
+}
+
+.projectDescription h4,
+.projectAchievements h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.projectDescription p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.projectAchievements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projectAchievements li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+  color: #555;
+}
+
+.projectAchievements li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* 学术讲座部分 */
+.lecturesContent {
+  text-align: center;
+}
+
+.lecturesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.lectureCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.lectureCard:hover {
+  transform: translateY(-5px);
+}
+
+.lectureHeader {
+  margin-bottom: 1rem;
+}
+
+.lectureTitle {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lectureSpeaker {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.lectureInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lectureDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.detailIcon {
+  font-size: 1.1rem;
+}
+
+.lectureDescription {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* 巡礼记录部分 */
+.visitSection {
+  margin: 4rem 0;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.visitRecord {
+  margin-top: 1.5rem;
+}
+
+.visitList {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.visitList li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.visitList li::before {
+  content: '✓';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .tabButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .institutesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lecturesList {
+    grid-template-columns: 1fr;
+  }
+  
+  .quoteText {
+    font-size: 1.1rem;
+  }
+} 

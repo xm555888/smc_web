@@ -1,0 +1,1123 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.noticeContent {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* 瓶子君152风格的名言 */
+.quoteContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.quote {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.quoteSymbol {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  position: absolute;
+}
+
+.quoteSymbol:first-child {
+  top: -1rem;
+  left: 0;
+}
+
+.quoteSymbol:last-child {
+  bottom: -1.5rem;
+  right: 0;
+}
+
+.quoteText {
+  background: linear-gradient(to right, #ff6699, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+}
+
+.quoteAuthor {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* 瓶子君152风格的互动提示 */
+.interactiveTip {
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.tipIcon {
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.tipIcon:hover {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tipContent {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.3);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.tipContent.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tipHeader {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.tipClose {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tipBody {
+  padding: 1rem;
+  text-align: left;
+}
+
+.tipBody p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* 欢迎部分 */
+.welcomeSection {
+  margin: 3rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.welcomeText {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  min-width: 150px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.statItem::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  transform: rotate(45deg);
+  opacity: 0.3;
+}
+
+.statItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.3);
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 102, 153, 0.2);
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* 新闻部分 */
+.newsSection {
+  margin: 4rem 0;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.newsItem {
+  height: 100%;
+}
+
+.moreNewsContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreNewsButton {
+  font-size: 1rem;
+}
+
+/* 专业设置部分 */
+.programsSection {
+  margin: 4rem 0;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.programCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.programCard:hover {
+  transform: translateY(-5px);
+}
+
+.programImageContainer {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.programImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.programCard:hover .programImage {
+  transform: scale(1.05);
+}
+
+.programCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.programCard p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* 可爱装饰 */
+.cuteDecoration {
+  display: none;
+}
+
+.cuteIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+/* 巡礼记录部分 */
+.visitSection {
+  margin: 4rem 0;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.visitRecord {
+  margin-top: 1.5rem;
+}
+
+.visitList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.visitList li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+.visitList li::before {
+  content: '✓';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* 章节标题样式 */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.titleDecoration {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 学院介绍特殊效果 */
+.introductionSection {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.introTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.introContent {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+  position: relative;
+}
+
+.introContent p {
+  margin-bottom: 1.5rem;
+}
+
+.moreInfoContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreInfoButton {
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.moreInfoButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.5);
+}
+
+/* 黑色遮罩区域 */
+.censoredText {
+  display: inline-block;
+  position: relative;
+  background-color: #000;
+  color: #000;
+  padding: 0 2px;
+  border-radius: 2px;
+  cursor: help;
+  transition: all 0.3s ease;
+}
+
+.censoredText:hover {
+  background-color: transparent;
+  color: #ff6699;
+}
+
+.censoredText:hover::after {
+  content: "你知道的太多了";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6699;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.censoredText:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff6699 transparent transparent transparent;
+  z-index: 10;
+}
+
+/* 上方出现文字效果 */
+.hoverAnnotation {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dashed #ff6699;
+  cursor: help;
+}
+
+.hoverAnnotation::after {
+  content: attr(data-annotation);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6699;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.hoverAnnotation::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff6699 transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.hoverAnnotation:hover::after,
+.hoverAnnotation:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 划线文字效果 */
+.strikethrough {
+  text-decoration: line-through;
+  color: #888;
+  position: relative;
+  display: inline-block;
+}
+
+.strikethrough::after {
+  content: attr(data-replacement);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #ff6699;
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.strikethrough:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 师资力量部分 */
+.facultySection {
+  margin: 4rem 0;
+}
+
+.facultyContainer {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facultyNav {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.facultyNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.facultyNav li {
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.facultyNav li:hover {
+  color: var(--primary-color);
+}
+
+.facultyNav li.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.facultyNav li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.teacherShowcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.teacherCardCenter {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: white;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  cursor: pointer;
+  width: 300px;
+  z-index: 2;
+  transform-style: preserve-3d;
+}
+
+.teacherCardCenter:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 15px rgba(255, 102, 153, 0.3);
+}
+
+.teacherCardCenter.animating {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+}
+
+.teacherCardSide {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  width: 200px;
+  opacity: 0.7;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.teacherCardLeft {
+  transform: translateX(30px) rotateY(-15deg);
+}
+
+.teacherCardRight {
+  transform: translateX(-30px) rotateY(15deg);
+}
+
+.teacherCardLeft.animating {
+  opacity: 0;
+  transform: translateX(-100px) rotateY(-30deg);
+}
+
+.teacherCardRight.animating {
+  opacity: 0;
+  transform: translateX(100px) rotateY(30deg);
+}
+
+.teacherNavButtons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.teacherNavButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.teacherNavButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.teacherPagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.paginationDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginationDot.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.moreFacultyContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreFacultyButton {
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.moreFacultyButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.5);
+}
+
+.teacherPhoto {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+}
+
+.teacherPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacherInfo h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.teacherInfo p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.teacherResearch {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.teacherDetailOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.teacherDetailContainer {
+  background-color: white;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 15px;
+  position: relative;
+  overflow: auto;
+  animation: popIn 0.3s ease;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.teacherDetailContent {
+  padding: 2rem;
+}
+
+.teacherDetailHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.teacherDetailPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary-color);
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.teacherDetailPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacherDetailInfo h2 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.teacherDetailTitle {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.teacherDetailResearch {
+  color: #666;
+  font-style: italic;
+}
+
+.teacherDetailBody {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.teacherDetailSection {
+  margin-bottom: 1.5rem;
+}
+
+.teacherDetailSection h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.teacherDetailSection h3::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.teacherDetailSection p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 学术成果部分 */
+.researchSection {
+  margin: 4rem 0;
+}
+
+.researchGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.researchCard {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.researchCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 102, 153, 0.3);
+}
+
+.researchIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.researchCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.researchCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.researchNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.moreResearchContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreResearchButton {
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.moreResearchButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.5);
+}
+
+/* 学生作品部分 */
+.worksSection {
+  margin: 4rem 0;
+}
+
+.worksSlider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) #f0f0f0;
+}
+
+.worksSlider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.worksSlider::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.worksSlider::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.workItem {
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+}
+
+.workItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 102, 153, 0.3);
+}
+
+.workItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.workInfo {
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.workInfo h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.workInfo p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.moreWorksContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreWorksButton {
+  font-size: 1rem;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .statsContainer {
+    gap: 1rem;
+  }
+  
+  .statItem {
+    min-width: 120px;
+    padding: 1rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+  }
+  
+  .welcomeText {
+    font-size: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .quoteText {
+    font-size: 1.1rem;
+  }
+
+  .tipContent {
+    width: 90%;
+  }
+
+  .introContent {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .censoredText:hover::after,
+  .hoverAnnotation::after {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+  
+  .programsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .teacherShowcase {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+  
+  .teacherCardCenter {
+    width: 250px;
+    padding: 1rem;
+  }
+  
+  .teacherCardSide {
+    display: none;
+  }
+  
+  .teacherNavButton {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .researchGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .teacherDetailHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .teacherDetailPhoto {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .workItem {
+    min-width: 250px;
+  }
+  
+  .facultyNav ul {
+    flex-wrap: wrap;
+  }
+  
+  .facultyNav li {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+} 

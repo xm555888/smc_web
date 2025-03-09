@@ -1,0 +1,480 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.titleDecoration {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.moegirlNotice {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.noticeIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.noticeContent {
+  flex: 1;
+  line-height: 1.6;
+}
+
+/* 瓶子君152风格的名言 */
+.quoteContainer {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quote {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.quoteSymbol {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  font-family: 'Georgia', serif;
+  position: relative;
+  line-height: 0;
+}
+
+.quoteSymbol:first-child {
+  margin-right: 0.5rem;
+  top: 0.5rem;
+}
+
+.quoteSymbol:last-child {
+  margin-left: 0.5rem;
+  bottom: -0.5rem;
+}
+
+.quoteText {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.quoteAuthor {
+  font-size: 1rem;
+  color: #777;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+/* 标签页部分 */
+.tabsContainer {
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabButton {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover, .tabButton.active {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.tabContent {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(255, 102, 153, 0.2);
+}
+
+/* 专业介绍部分 */
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 80px;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.introText {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+.majorsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.majorCard {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.majorCard:hover {
+  transform: translateY(-10px);
+}
+
+.majorImageContainer {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.majorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.majorCard:hover .majorImage {
+  transform: scale(1.1);
+}
+
+.majorOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(255, 102, 153, 0.8));
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.majorName {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.majorInfo {
+  padding: 1.5rem;
+}
+
+.majorDescription {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.majorDetails {
+  display: flex;
+  gap: 2rem;
+}
+
+.detailSection {
+  flex: 1;
+}
+
+.detailTitle {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.detailTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.detailList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detailList li {
+  margin-bottom: 0.5rem;
+  color: #666;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.detailList li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* 移除装饰 */
+.cuteDecoration {
+  display: none;
+}
+
+/* 培养方案部分 */
+.planContent {
+  text-align: center;
+}
+
+.planCard {
+  padding: 2rem;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.planTitle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.planText {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: left;
+}
+
+.requirementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.requirementItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.requirementIcon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.requirementText {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 实践教学部分 */
+.practiceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.practiceCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.practiceCard:hover {
+  transform: translateY(-10px);
+}
+
+.practiceIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.practiceTitle {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.practiceText {
+  color: #555;
+  line-height: 1.6;
+}
+
+.practiceHighlight {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.highlightTitle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.highlightContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.highlightItem {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.highlightItem:hover {
+  transform: translateY(-5px);
+}
+
+.highlightImageContainer {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.highlightImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.highlightItem:hover .highlightImage {
+  transform: scale(1.1);
+}
+
+.highlightItem h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlightItem p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .tabButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .majorsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .majorDetails {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .practiceGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .highlightContent {
+    grid-template-columns: 1fr;
+  }
+} 
