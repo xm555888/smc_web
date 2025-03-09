@@ -1,0 +1,548 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Navbar.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__XlgWY {
+  background-color: rgba(255, 102, 153, 0.85);
+  box-shadow: 0 2px 10px rgba(255, 102, 153, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 80px;
+}
+
+.Navbar_container__x_wnu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Navbar_logo__ycYQk {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar_logoImage__BhoCm {
+  height: 50px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj:hover {
+  transform: scale(1.05);
+}
+
+.Navbar_navMenu__YKUkJ {
+  display: flex;
+  list-style: none;
+}
+
+.Navbar_navItem__zYHCj {
+  margin-left: 1.5rem;
+}
+
+.Navbar_navLink__NoUWm {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Navbar_navLink__NoUWm:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_ {
+  color: white;
+  font-weight: bold;
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.Navbar_menuIcon__j_5cw {
+  display: none;
+  cursor: pointer;
+}
+
+.Navbar_bar__pfguf {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Navbar_menuIcon__j_5cw {
+    display: block;
+  }
+
+  .Navbar_logoImage__BhoCm {
+    height: 40px;
+  }
+
+  .Navbar_logoText__4ifaj {
+    font-size: 1.2rem;
+  }
+
+  .Navbar_navMenu__YKUkJ {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(255, 102, 153, 0.1);
+    padding: 2rem 0;
+  }
+
+  .Navbar_navMenu__YKUkJ.Navbar_active__gl4X_ {
+    left: 0;
+  }
+
+  .Navbar_navItem__zYHCj {
+    margin: 1.5rem 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+    bottom: -2px;
+    width: 20px;
+  }
+} 
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Footer.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__0IXn3 {
+  background-color: #f8f9fa;
+  padding: 3rem 0 1rem;
+  border-top: 3px solid var(--primary-color);
+  margin-top: 3rem;
+}
+
+.Footer_container__6pNfo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Footer_footerContent__guRXR {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.Footer_footerSection__Zafk8 {
+  flex: 1 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.Footer_footerTitle__x4IC_ {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.Footer_footerTitle__x4IC_::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.Footer_footerText__pZkXo {
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.Footer_footerLinks__L3vZo {
+  list-style: none;
+}
+
+.Footer_footerLinks__L3vZo li {
+  margin-bottom: 0.5rem;
+}
+
+.Footer_footerLinks__L3vZo a {
+  color: #666;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.Footer_footerLinks__L3vZo a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+.Footer_footerBottom__jCLw1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Footer_footerContent__guRXR {
+    flex-direction: column;
+  }
+  
+  .Footer_footerSection__Zafk8 {
+    margin-bottom: 2rem;
+  }
+} 
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/about/about.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.about_main__ykYkY {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_container__lvOka {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1 1;
+}
+
+.about_pageHeader__DBl5w {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about_pageTitle__AdL2r {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.about_titleDecoration__6A3oU {
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 学院简介部分 */
+.about_aboutSection__zHl0_ {
+  margin-bottom: 4rem;
+}
+
+.about_aboutCard__cANWo {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.about_sectionTitle__A70Rr {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.about_sectionTitle__A70Rr::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.about_aboutText__T2Zad {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* 愿景部分 */
+.about_visionSection__oCh_Y {
+  margin-bottom: 4rem;
+}
+
+.about_visionCard__o0Xum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+}
+
+.about_visionItem__U38wU {
+  flex: 1 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.about_visionItem__U38wU h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.about_visionItem__U38wU p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* 发展历程部分 */
+.about_historySection__nJVRC {
+  margin-bottom: 4rem;
+}
+
+.about_timeline__xvLCW {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.about_timeline__xvLCW::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+  z-index: 0;
+}
+
+.about_timelineItem__Eixx3 {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.about_timelineItem__Eixx3:nth-child(odd) {
+  left: 0;
+}
+
+.about_timelineItem__Eixx3:nth-child(even) {
+  left: 50%;
+}
+
+.about_timelineDate__P_4_m {
+  position: absolute;
+  width: 120px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 20px;
+  top: 15px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.about_timelineItem__Eixx3:nth-child(odd) .about_timelineDate__P_4_m {
+  right: -60px;
+}
+
+.about_timelineItem__Eixx3:nth-child(even) .about_timelineDate__P_4_m {
+  left: -60px;
+}
+
+.about_timelineContent__elKPU {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  z-index: 1;
+}
+
+.about_timelineContent__elKPU::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 3px solid var(--primary-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about_timelineItem__Eixx3:nth-child(odd) .about_timelineContent__elKPU::after {
+  right: -13px;
+}
+
+.about_timelineItem__Eixx3:nth-child(even) .about_timelineContent__elKPU::after {
+  left: -13px;
+}
+
+.about_timelineContent__elKPU h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.about_timelineContent__elKPU p {
+  color: #555;
+}
+
+/* 联系我们部分 */
+.about_contactSection__IJum6 {
+  margin-bottom: 2rem;
+}
+
+.about_contactInfo__Aykll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about_contactItem__1Mfno {
+  flex: 1 1;
+  min-width: 200px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about_contactItem__1Mfno:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 102, 153, 0.3);
+}
+
+.about_contactItem__1Mfno h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.about_contactItem__1Mfno p {
+  color: #555;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .about_container__lvOka {
+    padding-top: 100px;
+  }
+  
+  .about_pageTitle__AdL2r {
+    font-size: 2rem;
+  }
+  
+  .about_sectionTitle__A70Rr {
+    font-size: 1.5rem;
+  }
+  
+  .about_timeline__xvLCW::after {
+    left: 31px;
+  }
+  
+  .about_timelineItem__Eixx3 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .about_timelineItem__Eixx3:nth-child(even) {
+    left: 0;
+  }
+  
+  .about_timelineDate__P_4_m {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+  
+  .about_timelineItem__Eixx3:nth-child(odd) .about_timelineDate__P_4_m,
+  .about_timelineItem__Eixx3:nth-child(even) .about_timelineDate__P_4_m {
+    left: -30px;
+    top: 10px;
+  }
+  
+  .about_timelineItem__Eixx3:nth-child(odd) .about_timelineContent__elKPU::after,
+  .about_timelineItem__Eixx3:nth-child(even) .about_timelineContent__elKPU::after {
+    left: -13px;
+  }
+}
+
+/* 萌娘百科风格的提示框 */
+.about_moegirlNotice__j_ylO {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.about_noticeIcon__tVHNF {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.about_noticeContent__fJ6pm {
+  flex: 1 1;
+  line-height: 1.6;
+} 

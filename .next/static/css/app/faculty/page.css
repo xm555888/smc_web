@@ -736,4 +736,47 @@
   background-color: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
-} 
+}
+
+.faculty_censoredText___6gu_ {
+  display: inline-block;
+  position: relative;
+  background-color: #000;
+  color: #000;
+  padding: 0 2px;
+  border-radius: 2px;
+  cursor: help;
+  transition: all 0.3s ease;
+}
+
+.faculty_censoredText___6gu_:hover {
+  background-color: transparent;
+  color: #ff6699;
+}
+
+.faculty_censoredText___6gu_:hover::after {
+  content: "你知道的太多了";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6699;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.faculty_censoredText___6gu_:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff6699 transparent transparent transparent;
+  z-index: 10;
+}

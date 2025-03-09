@@ -12,11 +12,28 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/about/page.css",
+      "static/chunks/app/about/page.js"
+    ],
     "/faculty/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/faculty/page.css",
       "static/chunks/app/faculty/page.js"
+    ],
+    "/undergraduate/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/undergraduate/page.css",
+      "static/chunks/app/undergraduate/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

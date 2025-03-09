@@ -22,7 +22,8 @@ export default function Faculty() {
           research: "跨文化传播学、西方传播学",
           education: "南京大学",
           experience: "美国新闻出版署特邀访问学者，任中国跨文化交际学会副会长",
-          awards: ""
+          awards: "",
+          comment: <span className={styles.censoredText}>"很牛逼就是了"</span>
       },
       {
           id: 2,
@@ -32,7 +33,7 @@ export default function Faculty() {
           research: "新闻实务、大众传媒、国际传播",
           education: "中国人民大学新闻学院法学硕士",
           experience: "曾任江苏科技报社编委兼采通部主任（1984 - 1988）、深圳特区报社总编助理兼经济部主任（1991 - 2002）、深圳报业集团系列报刊副总编兼深圳日报社总编辑（2002 - 2010），美国纽约城市大学访问学者（2001 - 2002），兼任中国新闻史学会外国新闻传播史研究会副会长，中国科技新闻学会理事",
-          awards: ""
+          awards: "",
       },
       {
           id: 3,
@@ -122,7 +123,8 @@ export default function Faculty() {
           research: "中国传播史、族群与区域文化、公共关系",
           education: "南京大学文学硕士，中山大学人类学博士",
           experience: "",
-          awards: ""
+          awards: "",
+          comment: <span className={styles.censoredText}>"大一上过她的社会学，讲课挺无聊，舍友选过她的聚徒讲学说人很好，"</span>
       },
       {
           id: 12,
@@ -175,7 +177,8 @@ export default function Faculty() {
         education: "博士，2002,4-2019,3 任教于南京大学新闻传播学院，入选南京大学青年骨干教师（2008），南京大学优秀中青年学科带头人 (2011)。2019 年 4 月调至深圳大学传播学院任教",
         experience: "现为深圳大学特聘教授、博士生导师、深圳大学传播学院院长、国家社科基金重大项目 “大数据时代计算传播学的理论、方法与应用研究” 首席专家，入选 “国家特支计划” 哲学社会科学领军人才；担任中国新闻史学会智能与计算传播专业委员会（国家二级...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"院长伟大无需多言！！！上课完全不点名《计算传播学》《新媒体广告》一次企业参观，一次读书报告，两次微信群讨论作业(tip: 谈谈你对追逐热点的看法)，期末闭卷考，《新业态》一次读书报告，期末论文，给分还行。
+        冷知识：网新部分老师是他的学生"</span>
         },
         {
         id: 17,
@@ -186,7 +189,7 @@ export default function Faculty() {
         education: "北京大学学士（2005）、硕士（2008），清华大学与美国西北大学联合培养博士（2011），瑞士日内瓦大学博士后（2016）。",
         experience: "现任深圳大学全球传播研究院执行院长，深圳大学媒体融合与国际传播研究中心主任，深圳大学数字媒体文化实验室负责人。在调入深大工作之前，曾任教于中国人民大学新闻学院、清华大学新闻与传播...",
         awards: "深圳大学特聘教授，入选国家重大人才工程，国家社科基金重大项目首席专家，深圳市国家级领军人才。",
-        comment: ""
+        comment: <span className={styles.censoredText}>"国际传播领域大拿，人很好，讲课干货满满，点名不确定，《媒体融合》《跨文化传播》两次平时作业，字数限制1K，期末论文3K，给分不错"</span>
         },
         {
         id: 18,
@@ -263,7 +266,7 @@ export default function Faculty() {
         education: "深圳大学传播学院教授、博士生导师，深圳大学传媒与文化发展研究中心主任。复旦大学新闻学博士，伦敦政治经济学院（The London School of Economics and Political Science, UK）“文化与社会” 硕士；萨蒙弗雷泽大学（Simon Fraser University, Canada）、香港城市大学、昆士兰科技大学（Queensland University of Technology, Australia）访问学者。",
         experience: "著有《纪实写作与公共说理》一书。",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"只给本科生开一门《纪实写作》室友说上课干货满满，传院难得的硬课，不管是课堂还是作业都很严格，上了一定能学到东西，给分很严格"</span>
         },
         {
         id: 25,
@@ -274,7 +277,7 @@ export default function Faculty() {
         education: "教授、博士生导师。现任传播学院副院长。博士毕业于香港浸会大学。2013 年入职深圳大学传播学院，网络与新媒体系专任教师。早前曾任教于暨南大学新闻与传播学院、澳门大学传播系。",
         experience: "深圳市鹏城孔雀计划特聘岗位。主持国家级和省市级多项基金项目，在《新闻与传播研究》等知名学术刊物上发表中英文论文 30 余篇。学术成果获得多项省市级政府奖和学会奖，荣获广东省第八届哲学社会科学优秀成果奖二等奖、深圳市第十届...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"只给本科生开一门《用户研究》，很少点名，上课有点干燥，但人很好，讨论选题会和你一起想（即使你没有捋清楚），切实的给出她的建议，给分也很好"</span>
         },
         {
         id: 26,
@@ -285,7 +288,7 @@ export default function Faculty() {
         education: "传播学院教授，视觉传播方向学研导师，数字营销传播方向专硕导师。鲁迅美术学院摄影系本科及硕士毕业，2003 年入职深圳大学文学院，现为传播学院广告系教师。",
         experience: "第十届 “中国摄影金像奖” 摄影理论奖获得者，日本电通广告株式会社高级访问学者，深圳市高层次专业人才。两度获得深圳大学优秀本科课堂教学二等奖，所著《商业摄影实训教程》（第 3 版，中国人民大学出版社，2021 年）为 “新编 21 世纪新闻传播学系列教材”、...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"人还不错，但讲课有点无聊，不怎么点名，《摄影基础》《广告摄影》都是要拍拍拍的，组小组拍拍拍，喜欢拍照可以考虑，给分一般"</span>
         },
         {
         id: 27,
@@ -307,7 +310,7 @@ export default function Faculty() {
           education: "生于 1978 年，深圳大学学术委员会委员、传播学院教授、百万 + 原创作者，三个孩子的母亲。博士毕业于香港城市大学，曾在香港中文大学及美国华盛顿大学（西雅图）做访问学者",
           experience: "系中国新闻传播学学会杰出青年、广东省 “千百十工程” 省级培养对象、深圳市高层次人才地方级领军人才、深圳市优秀教师、深圳大学首届荔园优青。主持多项国家和省级课题，在国际 SSCI 期刊发表多篇英文论文，在国内知名期刊发表论文二十余篇...",
           awards: "",
-          comment: ""
+          comment: <span className={styles.censoredText}>"舍友说很有实力的老师，《传播学理论》讲的很好，每节课都要点人起来回答问题，做一次传播案例分析，发布在微信公众号上，期末闭卷考，给分不错"</span>
         },
         {
           id: 29,
@@ -329,7 +332,7 @@ export default function Faculty() {
           education: "教授，博士生导师，深圳大学社会科学部副主任，深圳大学社会科学联合会秘书长，美国加州大学洛杉矶分校（UCLA）访问学者，毕业于吉林大学文学院，获文学博士学位（中国现当代文学专业，文学传播与媒介文化方向）。",
           experience: "2004 年 —2007 年分别在中国国际广播电台电视节目中心、北广传媒、中央电视台体育频道担任播音主持工作。曾先后获得深圳市哲学社会科学奖新人奖、中国电视文艺 “星光奖” 理论奖二等奖、中国电视剧 “...",
           awards: "",
-          comment: ""
+          comment: <span className={styles.censoredText}>"有八卦，有八卦，有八卦"</span>
         }
     ],
     '副教授': [
@@ -375,7 +378,7 @@ export default function Faculty() {
         education: "2002 年 6 月获得深圳大学文学硕士学位；2008 年 6 月获得中山大学文学博士。",
         experience: "讲师。主要从事文化研究、图像传播研究、文艺学研究等。 主要学术成果有： 1、修辞学视野中的视觉文化研究，深圳大学学报，2008 年第 3 期 2、中国视觉修辞研究的进路，长江师范学院学报，2008 年第 1 期 3、后现代语境下阿多诺美学的复兴与超越，湖南科技学院学报，2008 年第 3 期 4、艺术自律性与大众文化时代的乌托邦，传播与文...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"人还行，舍友说讲课挺好的，《传播学理论》《西方艺术史》点名频率挺高，都是闭卷考，给分还行"</span>
         },
         {
         id: 35,
@@ -419,7 +422,7 @@ export default function Faculty() {
         education: "1975 年生于山东青岛。1993－1997 年就读于长春地质学院地质系／吉林大学地质学院。获理学学士学位。1997－2000 年就读于汕头大学中文系，获文学硕士学位。 2000－2003 年就读于山东大学中文系，获文学博士学位。",
         experience: "2003 年起任教于深圳大学文学院、传播学院、传媒与文化发展研究中心，现为传播系副主任。研究方向：美学与媒介哲学；网络新媒体传播。讲授课程 ：1、本科生课程：美学概...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"二峰之一，曾经的网红，人很好，都是大水课，听他偶尔吹吹牛还不错，不怎么点名，期末开卷考，给分也不错"</span>
         },
         {
         id: 39,
@@ -430,7 +433,7 @@ export default function Faculty() {
         education: "先后毕业于中国矿业大学、上海大学、中国传媒大学，分别获得文学学士（2001）、文学硕士（2008），传播学博士（2011），传播学博士后（2013）。",
         experience: "2011 年 9 月至 2014 年 8 月在深圳广播电影电视集团工作，担任高级研究员。2014 年 9 月入职深大传播学院，2017 年晋升为副教授，同年担任硕士生导师。曾赴密苏里大学新闻学院访学（2009 - 2010）；曾获第 19 届深圳新闻奖三等奖、广东省新世纪电视理论贡献奖、第六届深圳哲...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"讲课风趣幽默，人非常好，《新媒体产品概论》很有意思，不怎么点名，平时作业体验一个产品做一次汇报，期末做一个产品（不用实际落地），给分挺高。冷知识：曾经是副院长"</span>
         },
         {
         id: 40,
@@ -441,7 +444,7 @@ export default function Faculty() {
         education: "深圳大学传播学院副教授，硕士生导师，香港城市大学博士，美国德州大学奥斯汀分校访问学者，深圳市海外高层次人才，南山区 “领航人才”，获深圳大学 “荔园优青”、“新锐研究生导师” 等称号。",
         experience: "传播学院计算传播学研究团队主要核心成员。主持或参与多项国家级课题，在 SSCI 以及传播学中文权威期刊发表多篇中英文论文。学术兴趣为在线舆论的相关研究领域，围绕国家课题，采用计算传播学的方法，充分利用现有的大数据...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"人不错，讲课比较干燥，不怎么点名，《机器学习》作业多任务重，期末闭卷考，给分还行"</span>
         },
         {
         id: 41,
@@ -452,7 +455,7 @@ export default function Faculty() {
         education: "东北师范大学学士（2008）、硕士（2011）、博士（2016），北京大学博士后（2018）。为 “深圳市高层次人才” 后备级人才引进来深工作。",
         experience: "主持项目 4 项，其中，国家级项目 1 项、教育部项目 1 项；以第一作者发表 CSSCI 收录论文 10 篇，CSSCI 收录译文 7 篇。院线电影网络评分栏目 “影向标” 编辑；“迷影精神奖” 与 “迷影展映” 系列活动策划；电影学术网络刊物《...",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"人很好，《短视频》平时一次鉴赏视频作业，期末拍一段30s的广告视频参加大广赛，给分不按大广赛排名，按老师喜好程度，给分很好"</span>
         },
         {
         id: 42,
@@ -463,7 +466,7 @@ export default function Faculty() {
         education: "深圳大学传播学院副教授、硕士研究生导师。原复旦大学新闻学院副教授、硕士研究生导师；中国广播电视协会媒介融合研究基地研究员。1983 年 - 1987 年：西北大学中国语言文学系读本科，获文学学士学位。1987 年 - 1990 年：西北大学中国语言文学系读硕士研究生，获文学硕士学位。1990 年 - 1996 年：西北政法大学任教。1992 年 - 1995 年：兼职于陕西经济广播电台、陕西有线电视台，任记者、主持人。1997 年 - 2005 年：任教于复旦大学新闻学...",
         experience: "",
         awards: "",
-        comment: ""
+        comment: <span className={styles.censoredText}>"懂的都懂，不点名（和课代表熟的话），所有课都一个味，两次小组pre，期末论文，给分很好。冷知识：喜欢美女"</span>
         },
           {
             id: 43,
@@ -474,7 +477,7 @@ export default function Faculty() {
             education: "未提及",
             experience: "2004年入职深圳大学，2012年任教于深圳大学传播学院。曾赴英国伦敦大学亚非学院短期访问（2018年6 - 8月）。现任深圳大学传播学院广告系教师，深圳大学传媒与文化发展研究中心特聘研究员，中外文论比较专业委员会理事。",
             awards: "未提及",
-            comment: "未提及"
+            comment: <span className={styles.censoredText}>"另一峰，人很好，会发大红包，大水课，不点名，期末开卷考，给分很好"</span>
           },
           {
             id: 44,
@@ -520,7 +523,8 @@ export default function Faculty() {
         education: "华中师范大学理学学士（1997年），北京大学教育学硕士（2005年），香港中文大学哲学博士（2011年）",
         experience: "『e-Learning大讲堂』发起人和创办人之一，《开放教育研究》外审专家。已出版《远程学习者的社会资本：网络社会之视域》（著）、《技术进步中的现代远程教学》（编著），曾获中国教育技术协会年会论文一等奖等奖项。",
         awards: "曾获中国教育技术协会年会论文一等奖等奖项",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"让人又爱又恨，很喜欢互动，坐前排100%会被认识，i人地狱，讲课还行，点名很多，但是人很好，《数据可视化》网新三大小毕设之一，平时有一次翻转课堂讲课，给分不错，
+        《网络社会》平时事挺多，期末论文，给分不错，《社会网络关系》事比较少，期末交一个报告，给分一般。冷知识：《用户研究》《数据抓取》《数据可视化》本来三合一组成小毕设，因为老师对选题意见不合分家了"</span>
       },
       {
         id: 48,
@@ -531,7 +535,7 @@ export default function Faculty() {
         education: "未提及",
         experience: "作为主要参加者，参与国家级研究课题三项、级研究课题一项、市级研究课题三项、企业研究课题二项。曾主持负责珠海某大型服装集团市场调研和咨询分析工作；参与“上汽通用五菱营销战略和行动纲领研究”工作以及“湖北省高新技术产业发展研究”的项目研究工作；现主持负责深圳大学校级社科基金研究项目。",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"大水课，什么课都是一个味，基本不点名，一次Pre，期末论文，给分一般"</span>
       },
       {
         id: 49,
@@ -542,7 +546,7 @@ export default function Faculty() {
         education: "中国传媒大学 学士，名古屋大学（Nagoya University，Japan） 硕士(MA)，京都工艺纤维大学（Kyoto Institute of Technology） 博士（Ph.D.）",
         experience: "未提及",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，《数字色彩》平时一次期末初稿的pre，期末交一个报告，给分不错。冷知识：二次元少女"</span>
       },
       {
         id: 50,
@@ -575,7 +579,7 @@ export default function Faculty() {
         education: "于北京电影学院导演系毕业后留校任教，并受聘于北京大学、北京师范大学讲授电影创作课程",
         experience: "现任教深圳大学传播学院。作为导演，他拍摄的故事片、纪录片和广告片在国内外多个电影节参展并获奖。纪录电影“哈佛女孩”荣获波兰PRIX VISIONICA 电影节THE TELELANAL KULTURA特別奖，并受邀参加哥德堡电影节，中国独立纪录片电影节等多个国内外影展。该片也被栗憲庭電影基金會、香港中文大學及多个海...",
         awards: "纪录电影“哈佛女孩”荣获波兰PRIX VISIONICA 电影节THE TELELANAL KULTURA特別奖",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，每节课都点名，《视听基础》从拍照片到拍视频都有，期末交一个90s的视频，给分一般"</span>
       },
       {
         id: 53,
@@ -586,7 +590,7 @@ export default function Faculty() {
         education: "2019年获复旦大学新闻学院传播学博士学位，美国加州大学戴维斯分校联合培养博士（2017-2018）",
         experience: "现任深圳大学媒体融合与国际传播研究中心副主任。近年来在Information Processing & Management、Journal of Medical Internet Research、Telematics and Informatics、《新闻与传播研究》、《新闻大学》、《新闻记者》等SSCI/SCI/CSSCI期刊发表论文20余篇。主持国家社会科学基金项目...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，全部都是教技术的课，比较硬核，《网络社会》《计算方法》点名看心情，期末都是用学的软件做一个报告Pre，类似于毕设，要求没那么严格，给分还行"</span>
       },
       {
         id: 54,
@@ -608,7 +612,7 @@ export default function Faculty() {
         education: "中南民族大学广告学学士，武汉理工大学营销传播学硕士，武汉大学广告与媒介经济学博士，深圳大学市场营销学博士后",
         experience: "2021年3月加入深圳大学传播学院，现任广告学助理教授。近五年在SSCI/CSCCI期刊发表论文13篇，其中13篇为第一或通讯作者。文章发表在Journal  of  Destination  Marketing  & Management, Sustainability, Journal of Product and Brand Management ，南开管理评论...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人非常好，点名比较少，讲课非常有意思，干货满满，非常贴近现在市场的营销前沿，平时作业，期末作业都没有，给分很高</span>
       },
       {
         id: 56,
@@ -619,7 +623,7 @@ export default function Faculty() {
         education: "2010年获得西伦敦大学博士学位",
         experience: "2011年开始任教于深圳大学传播学院。执教课程：新媒体设计基础、动态视觉设计。参与课题：2015-2918，广东省教改项目，HTML5编程技术下的广告创意设计教学研究；2016-2018，深圳市社科项目，网络视频直播的引导策略研究；2018- ，广东省重点项目，青年自拍类社交图像中社会舆情上的敏感度研究；2018- ，广东省教改项目，传统美术与现代信息技术的融合；2019...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人不错，两门课都是水课，偶尔点名，AE课会参加大广赛，给分不错。冷知识：疑似开摆了"</span>
       },
       {
         id: 57,
@@ -652,7 +656,7 @@ export default function Faculty() {
         education: "西南大学文学学士，厦门大学新闻传播学院传播学博士，美国伊利诺伊州香槟分校联合培养博士（2010 年 8 月 - 2012 年 8 月）",
         experience: "2019 年入职中山大学媒体与设计学院，任博士后 / 副研究员。2019 年 8 月 - 2020 年 9 月，借调中国网络空间研究院从事网信智库相关研究工作。2022 年 5 月入职深圳大学传播学院，现任深圳市人文社科重点研究基地深圳城市传播创新研究中心常务副主任。",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人还不错，就是有时候让人觉得有点抽象，《媒体与社会》大水课，基本不点名，给分很低"</span>
         },
         {
         id: 60,
@@ -663,7 +667,7 @@ export default function Faculty() {
         education: "云南大学工学学士（数字媒体技术），浙江大学工程硕士（软件工程），丹麦哥本哈根大学（CTS 中心）联合培养博士生（国家留学基金委员会公派），浙江大学文学博士（新闻传播学）",
         experience: "2024 年 7 月加入深圳大学传播学院，现任网络与新媒体系全职授课教师。 开设课程：2024-2025 秋：《人机交互设计》、《互联网程序设计：...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人非常好，就是教的技术都有点过时了，很喜欢《人机交互设计》做单片机，很少点名，期末做一个产品Pre，给分一般，冷知识：漂亮姐姐"</span>
         },
         {
         id: 61,
@@ -685,7 +689,7 @@ export default function Faculty() {
         education: "北京大学理学学士、经济学学士，北京大学新闻与传播硕士，英国伦敦政治经济学院哲学博士（媒介与传播，2023）",
         experience: "近年以第一作者 / 通讯作者发表多篇 SSCI/CSSCI 期刊论文。论文与学术作品发表于 Social Problems，China Quarterly，《新闻与写作》，《文艺理论与批评》等期刊。论文曾被人大复印报刊资料《新闻与传播》全文转载。",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人非常好，年轻有为，讲课也有意思，两门课都很少点名，平时作业一次Pre，期末论文，给分很高。冷知识：传院学历最高"</span>
         },
         {
         id: 63,
@@ -707,7 +711,7 @@ export default function Faculty() {
         education: "未提及",
         experience: "深圳大学传播学院广告系教师，也是一位美术背景的资深广告人，曾在国际、本土 4A 公司工作九年，从业期间收获了长城奖、金印奖、纽约广告节等国内外广告节金银铜奖，个人吉祥物设计也多次被官方采用。主要教研领域广告创意表现、品牌整合设计与推广、设计创新思维执教课程《平面广告创意与设计》、《品牌整合设计》、《设计思维与方法》等专业课程教研成果：发表论文普刊 9 篇，核心期刊 1 篇，发明专利 1 项 ，指导学生广...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，《PS》课很有意思，讲课很有耐心，给分很高，"</span>
         },
         {
         id: 65,
@@ -718,7 +722,8 @@ export default function Faculty() {
         education: "1997-2001，华中科技大学计算机科学与技术学院，本科 2001-2004，华中科技大学新闻与信息传播学院，硕士 2004-2008，管理学院，博士",
         experience: "主要研究领域：数字营销、文化创意产业开设主要课程：数据抓取与清洗、新媒体概论近期主持的科研项目：品牌延伸理论视角下的 IP 电影研究教育部深圳市宣传文化事业发展专项基金 2023 年度项目绩效评估，市委宣传部书香深圳测评体系 —— 基于全民阅读的研究，深圳出版集团光明区市民文明素养摸...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"让人爱恨交织的师太，喜欢的很喜欢，讨厌的很讨厌。很有实力，两门课都不点名，选题谜语人，但给分挺高，
+        冷知识：最懂交叉学科，选题合他心水一路绿灯，疑似开摆"</span>
         },
         {
         id: 66,
@@ -729,7 +734,7 @@ export default function Faculty() {
         education: "于 2015 年在香港城市大学取得博士学位",
         experience: "曾就职于香港 Openrice 有限公司，香港城市大学商学院管理科学系，腾讯广告营销与服务线。研究领域： 计算广告，社会网络分析，文献计量学开设主要课程：计算广告导论近期主持和参与科研项目：广告多次多点多样曝光的影响机制研究近五年发表论著：期刊：汪臻真，朱志华，蔡政. (2020). 计算广告中的效果衡量方法。中国网络传播研究.Jiang, L. C., Wang, Z. Z., Peng, T. –Q., & Z...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，讲课比较干燥，《计算广告》基本不点名，两次Pre，给分一般。冷知识：带小蜜蜂上课，梦回小学课堂"</span>
         },
         {
         id: 67,
@@ -762,7 +767,7 @@ export default function Faculty() {
         education: "中山大学文学学士、文学硕士，中山大学法学博士（政治传播学）",
         experience: "曾任广州广播电视台双语出镜记者，广州大学新闻与传播学院讲师。现任深圳大学传播学院助理教授。主要研究领域：健康传播、国际传播、政治传播、计算传播等。开设主要课程：本科生：《国际传播》《视听节目创意与策划》《数据处理与 SPSS 应用》等。研究生：《新闻传播学研究方法》《传播统计学》《健康传播理论》《健康传播研究前沿》等。近期主...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"人很好，声控福利，讲课很有意思，《SPSS与数据处理》基本不点名，传院自己的数学课，全凭自己造化。冷知识：疑似0"</span>
         },
         {
         id: 70,
@@ -773,7 +778,7 @@ export default function Faculty() {
         education: "广告学博士，本科毕业于广东外语外贸大学英语专业，硕士毕业于北京大学光华管理学院工商管理专业，博士毕业于中国传媒大学广告学院",
         experience: "曾就职于法国阳狮集团星传媒体，拥有丰富的广告策划与媒体管理经验。主要研究领域：计算广告、广告实务开设主要课程：《品牌建构与传播》、《广告策划》、《媒体策略》、《新媒体广告前沿》近期主持的科研项目：1. 项目：主持，钟书平，国际专业认证背景下广告学专业课程体系改...",
         awards: "未提及",
-        comment: "未提及"
+        comment: <span className={styles.censoredText}>"关注公众号“爱反思的钟博士”"</span>
         },
         {
           id: 71,
@@ -819,7 +824,7 @@ export default function Faculty() {
        education: "电影学博士",
        experience: "毕业于中国传媒大学影视艺术学院。2006年进入深大工作，先后在文学院、传播学院工作，现任艺术学部戏剧影视学院院长，传播学院双聘教师。先后于2015-16年在加州大学洛杉矶分校电影、电视和戏剧学院的制片人MFA专业（Producer Program）访学，2017-18年在喀什大学人文学院援疆支教，2023-2024年在东京大学综合文化研究科表象文化论研究室访学。深圳大学赛艇队专家队队员，曾获深圳2022年X9高校院所联盟...",
        awards: "曾获深圳2022年X9高校院所联盟...（信息不完整）",
-       comment: "未提及"
+       comment: <span className={styles.censoredText}>"人很好，讲课一般，《电影赏析》点名挺多，作业很多，都是写影评，给分不错。冷知识：戏剧与影视学院院长"</span>
      }
    ]
   };

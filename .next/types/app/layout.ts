@@ -1,4 +1,4 @@
-// File: D:\学习\JAVASCRIPT网页前端交互\web\app\layout.js
+// File: D:\工作资料\smc_web\smc_web\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

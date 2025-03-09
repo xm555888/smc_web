@@ -1,0 +1,730 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Navbar.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__XlgWY {
+  background-color: rgba(255, 102, 153, 0.85);
+  box-shadow: 0 2px 10px rgba(255, 102, 153, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 80px;
+}
+
+.Navbar_container__x_wnu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Navbar_logo__ycYQk {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar_logoImage__BhoCm {
+  height: 50px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.Navbar_logoText__4ifaj:hover {
+  transform: scale(1.05);
+}
+
+.Navbar_navMenu__YKUkJ {
+  display: flex;
+  list-style: none;
+}
+
+.Navbar_navItem__zYHCj {
+  margin-left: 1.5rem;
+}
+
+.Navbar_navLink__NoUWm {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Navbar_navLink__NoUWm:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_ {
+  color: white;
+  font-weight: bold;
+}
+
+.Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.Navbar_menuIcon__j_5cw {
+  display: none;
+  cursor: pointer;
+}
+
+.Navbar_bar__pfguf {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Navbar_menuIcon__j_5cw {
+    display: block;
+  }
+
+  .Navbar_logoImage__BhoCm {
+    height: 40px;
+  }
+
+  .Navbar_logoText__4ifaj {
+    font-size: 1.2rem;
+  }
+
+  .Navbar_navMenu__YKUkJ {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(255, 102, 153, 0.1);
+    padding: 2rem 0;
+  }
+
+  .Navbar_navMenu__YKUkJ.Navbar_active__gl4X_ {
+    left: 0;
+  }
+
+  .Navbar_navItem__zYHCj {
+    margin: 1.5rem 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Navbar_menuIcon__j_5cw .Navbar_bar__pfguf.Navbar_active__gl4X_:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .Navbar_navLink__NoUWm.Navbar_active__gl4X_::after {
+    bottom: -2px;
+    width: 20px;
+  }
+} 
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/Footer.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__0IXn3 {
+  background-color: #f8f9fa;
+  padding: 3rem 0 1rem;
+  border-top: 3px solid var(--primary-color);
+  margin-top: 3rem;
+}
+
+.Footer_container__6pNfo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Footer_footerContent__guRXR {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.Footer_footerSection__Zafk8 {
+  flex: 1 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.Footer_footerTitle__x4IC_ {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.Footer_footerTitle__x4IC_::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.Footer_footerText__pZkXo {
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.Footer_footerLinks__L3vZo {
+  list-style: none;
+}
+
+.Footer_footerLinks__L3vZo li {
+  margin-bottom: 0.5rem;
+}
+
+.Footer_footerLinks__L3vZo a {
+  color: #666;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.Footer_footerLinks__L3vZo a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+.Footer_footerBottom__jCLw1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .Footer_footerContent__guRXR {
+    flex-direction: column;
+  }
+  
+  .Footer_footerSection__Zafk8 {
+    margin-bottom: 2rem;
+  }
+} 
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/undergraduate/undergraduate.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.undergraduate_main__LUaEX {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.undergraduate_container__4anIA {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 2rem 2rem;
+  flex: 1 1;
+}
+
+.undergraduate_pageHeader__00Lap {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.undergraduate_pageTitle__Rv93S {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.undergraduate_titleDecoration__mDBU8 {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* 萌娘百科风格的提示框 */
+.undergraduate_moegirlNotice__chTl1 {
+  display: flex;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #36c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.undergraduate_noticeIcon__QJppC {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #36c;
+}
+
+.undergraduate_noticeContent__Su4QW {
+  flex: 1 1;
+  line-height: 1.6;
+}
+
+/* 瓶子君152风格的名言 */
+.undergraduate_quoteContainer__wG7Yy {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.undergraduate_quote__XHSfD {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.undergraduate_quoteSymbol__MGDw7 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  font-family: 'Georgia', serif;
+  position: relative;
+  line-height: 0;
+}
+
+.undergraduate_quoteSymbol__MGDw7:first-child {
+  margin-right: 0.5rem;
+  top: 0.5rem;
+}
+
+.undergraduate_quoteSymbol__MGDw7:last-child {
+  margin-left: 0.5rem;
+  bottom: -0.5rem;
+}
+
+.undergraduate_quoteText__Gyh3I {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.undergraduate_quoteAuthor__YPUDx {
+  font-size: 1rem;
+  color: #777;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+/* 标签页部分 */
+.undergraduate_tabsContainer__lYMjh {
+  margin-bottom: 2rem;
+}
+
+.undergraduate_tabs__fG__U {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.undergraduate_tabButton__iM5Zp {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.undergraduate_tabButton__iM5Zp:hover, .undergraduate_tabButton__iM5Zp.undergraduate_active__uKVaU {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.3);
+}
+
+.undergraduate_tabContent__wLmi8 {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(255, 102, 153, 0.2);
+}
+
+/* 专业介绍部分 */
+.undergraduate_sectionTitle__nyKjy {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+}
+
+.undergraduate_sectionTitle__nyKjy::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 80px;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.undergraduate_introText__QL3h5 {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+.undergraduate_majorsGrid__xgKh9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.undergraduate_majorCard__enuAI {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.undergraduate_majorCard__enuAI:hover {
+  transform: translateY(-10px);
+}
+
+.undergraduate_majorImageContainer__r_nfi {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.undergraduate_majorImage__l1QU1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.undergraduate_majorCard__enuAI:hover .undergraduate_majorImage__l1QU1 {
+  transform: scale(1.1);
+}
+
+.undergraduate_majorOverlay__b7rOk {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(255, 102, 153, 0.8));
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.undergraduate_majorName__igOge {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.undergraduate_majorInfo__Bi8sx {
+  padding: 1.5rem;
+}
+
+.undergraduate_majorDescription__0po_G {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.undergraduate_majorDetails__mVse0 {
+  display: flex;
+  gap: 2rem;
+}
+
+.undergraduate_detailSection__KzdlK {
+  flex: 1 1;
+}
+
+.undergraduate_detailTitle__R_g7x {
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.undergraduate_detailTitle__R_g7x::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.undergraduate_detailList__bYdt0 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.undergraduate_detailList__bYdt0 li {
+  margin-bottom: 0.5rem;
+  color: #666;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.undergraduate_detailList__bYdt0 li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* 移除装饰 */
+.undergraduate_cuteDecoration__QydTf {
+  display: none;
+}
+
+/* 培养方案部分 */
+.undergraduate_planContent__ss3v9 {
+  text-align: center;
+}
+
+.undergraduate_planCard__J4g57 {
+  padding: 2rem;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.undergraduate_planTitle__OuAx_ {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.undergraduate_planText__xQLVe {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: left;
+}
+
+.undergraduate_requirementsList__xRnfi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.undergraduate_requirementItem__RXhBR {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.undergraduate_requirementIcon__0ONhb {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.undergraduate_requirementText__fWvp4 {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 实践教学部分 */
+.undergraduate_practiceGrid__og14F {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.undergraduate_practiceCard__JmkHS {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.undergraduate_practiceCard__JmkHS:hover {
+  transform: translateY(-10px);
+}
+
+.undergraduate_practiceIcon__z_McR {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.undergraduate_practiceTitle__3qmLr {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.undergraduate_practiceText__6HWdH {
+  color: #555;
+  line-height: 1.6;
+}
+
+.undergraduate_practiceHighlight__S_mMF {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.undergraduate_highlightTitle__P2G1B {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.undergraduate_highlightContent__tLpS8 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+.undergraduate_highlightItem__KiSM6 {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.undergraduate_highlightItem__KiSM6:hover {
+  transform: translateY(-5px);
+}
+
+.undergraduate_highlightImageContainer__tmiYE {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(255, 102, 153, 0.2);
+}
+
+.undergraduate_highlightImage__AF3qG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.undergraduate_highlightItem__KiSM6:hover .undergraduate_highlightImage__AF3qG {
+  transform: scale(1.1);
+}
+
+.undergraduate_highlightItem__KiSM6 h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.undergraduate_highlightItem__KiSM6 p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .undergraduate_container__4anIA {
+    padding-top: 100px;
+  }
+  
+  .undergraduate_pageTitle__Rv93S {
+    font-size: 2rem;
+  }
+  
+  .undergraduate_tabButton__iM5Zp {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .undergraduate_majorsGrid__xgKh9 {
+    grid-template-columns: 1fr;
+  }
+  
+  .undergraduate_majorDetails__mVse0 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .undergraduate_practiceGrid__og14F {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .undergraduate_highlightContent__tLpS8 {
+    grid-template-columns: 1fr;
+  }
+} 
